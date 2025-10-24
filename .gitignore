@@ -38,3 +38,7 @@ build/
 .DS_Storetarget/
 .idea/
 *.iml
+.idea/
+target/
+*.class
+.DS_Store
