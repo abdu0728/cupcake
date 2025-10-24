@@ -20,5 +20,6 @@ public class Main {
             System.out.println("Connection failed");
             e.printStackTrace();
         }
+        System.out.println("Cupcake projektet virker");
     }
 }
