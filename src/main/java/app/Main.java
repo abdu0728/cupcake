@@ -1,17 +1,24 @@
 package app;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+public class Main {
+
+    public static void main(String[] args) {
+
+        String url = "jdbc:postgresql://localhost:5432/cupcake_db";
+        String user = "cupcakeuser";
+        String password = "cupcake123";
+
+        System.out.printf("Connecting to database");
+
+        try (Connection connection = DriverManager.getConnection(url, user, password)) {
+            System.out.println("Connection successful");
+        } catch (SQLException e) {
+            System.out.println("Connection failed");
+            e.printStackTrace();
         }
     }
 }
