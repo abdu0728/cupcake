@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    background-color: #fff9f5;
+    font-family: 'Poppins', sans-serif;
+    color: #4a1f1c;
+}
+
+.site-header {
+    text-align: center;
+    background-color: #fff9f5;
+    position: relative;
+}
+
+.logo {
+    height: 90px;
+    width: auto;
+    margin: 40px auto;
+    display: block;
+}
+
+.scallop {
+    height: 25px;
+    background: radial-gradient(circle at 12px 12px, #e05b5b 12px, transparent 13px) repeat-x;
+    background-size: 24px 24px;
+}
+
+.top {
+    transform: rotate(180deg);
+}
+
+.bottom {
+    margin-top: 20px;
+}
