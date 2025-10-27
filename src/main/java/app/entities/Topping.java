@@ -13,15 +13,24 @@ public class Topping {
         this.aktiv = aktiv;
     }
     public int getTopId() {
+
         return topId;
     }
     public String getNavn() {
+
         return navn;
     }
     public double getPris() {
+
         return pris;
     }
-    public boolean isAktiv() {return aktiv; }
+    public boolean isAktiv() {
+        return aktiv;
+    }
+
+    public void setPris(double pris) {
+        this.pris = pris;
+    }
 
     @Override
     public String toString() {
