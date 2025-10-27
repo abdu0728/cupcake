@@ -31,6 +31,15 @@ public class Topping {
     public void setPris(double pris) {
         this.pris = pris;
     }
+    public void setNavn(String navn) {
+        this.navn = navn;
+    }
+    public void setAktiv(boolean aktiv) {
+        this.aktiv = aktiv;
+    }
+    public void setTopId(int topId) {
+        this.topId = topId;
+    }
 
     @Override
     public String toString() {
